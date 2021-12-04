@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>模板方法--插值</title>
+    <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="app" v-once>
+        {{a}} 
+        <p>Using the world: {{rawHtml}}</p>
+        <p>Using v-html direc: <span v-html="rawHtml"></span></p>
+    </div>
+
+    <script type="text/javascript">
+        var data = {a : 1}
+        var vm = new Vue({
+            el:"#app",
+            data: {
+                rawHtml: '<span style="color:red">this is should red</span>'
+            }
+        })
+    </script>
+</body>
+
+</html>

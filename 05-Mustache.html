@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>第一个vue程序</title></title>
+  <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+
+ <div id="app">
+   <h1>{{firstName + lastName}}</h1>
+   <h1>{{firstName}} {{lastName}}</h1>
+ </div>
+ <script>
+   const app = new Vue({
+     el: '#app',
+     data: {
+       firstName: 'renxiang',
+       lastName: 'hu'
+     },
+     methods:{ 
+     },
+   })
+ </script>
+</body>
+
+</html>
